@@ -1,0 +1,13 @@
+reverse(Node* head) {
+	if head == NULL || head->next ==NULL) return head
+	else
+		next = head->next
+		last = head
+		while(next != NULL) {
+			tmp = next->next
+			next->next = last
+			last = next
+			next = tmp
+		}
+		return next
+}
